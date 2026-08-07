@@ -1,0 +1,268 @@
+/*==============================
+            NAVBAR
+==============================*/
+
+header{
+
+    position:fixed;
+
+    top:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:1000;
+
+    pointer-events:none;
+
+}
+
+.navbar{
+
+    width:min(1200px,90%);
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    border-radius:999px;
+
+    padding:12px 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    box-shadow:0 15px 35px rgba(255,160,200,.18);
+
+    pointer-events:all;
+
+}
+
+/*==============================
+            LOGO
+==============================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+     color:rgb(255, 193, 227);
+
+}
+
+.logo img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:10%;
+
+    object-fit:cover;
+
+}
+
+/*==============================
+          LINKS
+==============================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    color:var(--text);
+
+    font-weight:500;
+
+transition:
+        background .35s,
+        color .35s,
+        transform .35s,
+        box-shadow .35s;
+
+    position:relative;
+
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+       transform:translateY(-2px);
+
+    color:var(--pink);
+
+}
+
+/* Página activa */
+
+.nav-links a.active{
+
+    background:white;
+
+    color:var(--pink);
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(255,170,200,.25);
+
+}
+
+/*==============================
+        BOTÓN LUNA
+==============================*/
+
+.theme-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--pink);
+
+    font-size:1.1rem;
+
+    box-shadow:0 8px 20px rgba(255,170,200,.25);
+
+    transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+    transform:rotate(20deg) scale(1.08);
+
+    background:var(--pink);
+
+    color:white;
+
+}
+
+/*==============================
+      ANIMACIÓN NAVBAR
+==============================*/
+
+.navbar{
+
+    animation:navbarAppear .8s ease;
+
+}
+
+@keyframes navbarAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+      PEQUEÑO BRILLO
+==============================*/
+
+.navbar::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80px;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:shine 8s linear infinite;
+
+    pointer-events:none;
+
+}
+
+@keyframes shine{
+
+    0%{
+
+        left:-120%;
+
+    }
+
+    100%{
+
+        left:130%;
+
+    }
+
+}

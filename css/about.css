@@ -1,0 +1,244 @@
+/*=================================
+            ABOUT
+=================================*/
+
+.about{
+
+   padding:40px 8% 120px;
+
+}
+
+/*==============================
+        TITULO ABOUT
+==============================*/
+
+.about-title{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-bottom:70px;
+
+}
+
+/* Pastilla rosa */
+
+.about-badge{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    background:var(--lightPink);
+
+    color:var(--pink);
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(249, 218, 229, 0.18);
+
+}
+
+/* Título */
+
+.about-title h2{
+
+    font-size:2.8rem;
+
+    color:#f9c693;
+
+    font-weight:700;
+
+}
+
+/*=================================
+        CONTENIDO SUPERIOR
+=================================*/
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:1.4fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-bottom:70px;
+
+}
+
+/*=================================
+            TEXTO
+=================================*/
+
+.about-text p{
+
+    font-size:1.1rem;
+
+    line-height:2.1;
+
+}
+
+/*=================================
+            IMAGEN
+=================================*/
+
+.about-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.about-blob{
+
+    position:absolute;
+
+    width:330px;
+
+    height:330px;
+
+    background:#FFDCEB;
+
+    border-radius:55% 45% 60% 40%;
+
+    animation:morph 10s ease-in-out infinite;
+
+}
+
+.about-image img{
+
+    width:290px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=================================
+            TARJETAS
+=================================*/
+
+.about-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.about-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-card h3{
+
+    text-align:center;
+
+    color:var(--pink);
+
+    margin-bottom:25px;
+
+    font-size:1.5rem;
+
+}
+
+.about-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.about-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:1rem;
+
+}
+
+.about-card img{
+
+    width:20px;
+
+}
+/*==============================
+        DIVIDER
+==============================*/
+
+.section-divider{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0px 0 10px;
+
+    overflow:hidden;
+
+}
+
+.section-divider img{
+
+    width:100%;
+
+    max-width:1600px;
+
+    height:auto;
+
+    object-fit:cover;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}

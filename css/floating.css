@@ -1,0 +1,39 @@
+.floating-item{
+
+    position:absolute;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    animation:float infinite ease-in-out;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-25px)
+        rotate(8deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+    }
+
+}
