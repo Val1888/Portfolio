@@ -820,3 +820,498 @@ body::after{
     font-size:.95rem;
 
 }
+
+/*=================================
+        RESPONSIVE GENERAL
+=================================*/
+
+/*==============================
+        TABLETS
+==============================*/
+
+@media (max-width: 900px){
+
+    /*------------------------------
+            HERO
+    ------------------------------*/
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:100px 6% 60px;
+
+    }
+
+    .hero-text{
+
+        align-items:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:30px;
+
+    }
+
+
+    /*------------------------------
+            ABOUT
+    ------------------------------*/
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+    .about-text{
+
+        order:1;
+
+    }
+
+    .about-image{
+
+        order:2;
+
+    }
+
+    .about-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /*------------------------------
+            PROYECTOS
+    ------------------------------*/
+
+    .project-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    /*------------------------------
+            CONTACTO
+    ------------------------------*/
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-image{
+
+        order:-1;
+
+    }
+
+}
+
+/*==============================
+            CELULAR
+==============================*/
+
+@media (max-width: 600px){
+
+    /*------------------------------
+            GENERAL
+    ------------------------------*/
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    section{
+
+        padding-left:6%;
+
+        padding-right:6%;
+
+    }
+
+
+    /*------------------------------
+            TITULOS
+    ------------------------------*/
+
+    .about-title{
+
+        margin-bottom:45px;
+
+        gap:12px;
+
+    }
+
+    .about-title h2{
+
+        font-size:2rem;
+
+        text-align:center;
+
+    }
+
+    .about-badge{
+
+        font-size:.9rem;
+
+        padding:10px 20px;
+
+    }
+
+
+    /*------------------------------
+            HERO
+    ------------------------------*/
+
+    .hero{
+
+        min-height:auto;
+
+        padding:80px 6% 50px;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hello{
+
+        font-size:1rem;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.3rem;
+
+        line-height:1.5;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /*------------------------------
+            BOTONES
+    ------------------------------*/
+
+    .buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+        gap:15px;
+
+    }
+
+    .buttons a{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+    /*------------------------------
+            IMAGEN HERO
+    ------------------------------*/
+
+    .hero-image{
+
+        width:100%;
+
+    }
+
+    .image-card{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+
+    /*------------------------------
+            ABOUT
+    ------------------------------*/
+
+    .about{
+
+        padding-bottom:70px;
+
+    }
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .about-text p{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+    .about-image img{
+
+        width:230px;
+
+    }
+
+    .about-blob{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+
+    /*------------------------------
+            TARJETAS ABOUT
+    ------------------------------*/
+
+    .about-cards{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .about-card{
+
+        padding:25px;
+
+    }
+
+    .about-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .about-card li{
+
+        font-size:.9rem;
+
+    }
+
+
+    /*------------------------------
+            PROYECTOS
+    ------------------------------*/
+
+    .projects{
+
+        padding:60px 6%;
+
+    }
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .project-card{
+
+        padding:30px;
+
+    }
+
+
+    /*------------------------------
+            SOFTWARE
+    ------------------------------*/
+
+    .tools-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:15px;
+
+    }
+
+    .tool-card{
+
+        padding:20px 10px;
+
+        border-radius:20px;
+
+    }
+
+    .tool-card img{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+    .tool-card p{
+
+        font-size:.85rem;
+
+    }
+
+
+    /*------------------------------
+            FORMACION
+    ------------------------------*/
+
+    .experience-container{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .education-card{
+
+        padding:25px;
+
+    }
+
+
+    /*------------------------------
+            HABILIDADES
+    ------------------------------*/
+
+    .skill-tags{
+
+        gap:10px;
+
+    }
+
+    .skill-tags span{
+
+        padding:10px 15px;
+
+        font-size:.85rem;
+
+    }
+
+
+    /*------------------------------
+            CONTACTO
+    ------------------------------*/
+
+    .contact{
+
+        padding:60px 6% 80px;
+
+    }
+
+    .contact-subtitle{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .contact-card{
+
+        padding:20px;
+
+        gap:15px;
+
+    }
+
+    .contact-card img{
+
+        width:35px;
+
+        height:35px;
+
+    }
+
+    .contact-card h3{
+
+        font-size:1rem;
+
+    }
+
+    .contact-card a,
+
+    .contact-card p{
+
+        font-size:.85rem;
+
+        word-break:break-word;
+
+    }
+
+    .contact-image img{
+
+        width:250px;
+
+    }
+
+
+    /*------------------------------
+            FOOTER
+    ------------------------------*/
+
+    .footer{
+
+        padding:30px 6%;
+
+    }
+
+    .footer p{
+
+        font-size:.8rem;
+
+    }
+
+}
