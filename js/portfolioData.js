@@ -2,6 +2,85 @@ const portfolio = {
 
 illustration:[
 
+    {
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/Artboard 1.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
+
+{
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/Creatividad.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
+{
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/Ideas.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
+{
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/manualidades.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
+{
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/producto.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
+{
+
+title:"Papelerama",
+
+type:"image",
+
+src:"assets/images/ilustracion/Tareas.png",
+
+description:"Banner publicitario para la papeleria Papelerama",
+
+software:["Ilustrador, Photoshop"]
+
+},
 {
 
 title:"Expresiones Faciales para personaje",
@@ -268,6 +347,18 @@ software:["After Effects", "Illustrator"]
 
 },
 
+{
+title:"Papelerama",
+
+type:"youtube",
+
+src:"assets/images/2d/Organizacion.gif",
+
+description:"Producción de un video para la publicidad de la papeleria Papelerama.",
+
+software:["Adobe Premiere Pro", "Media Encoder"]
+
+},
 
 {
 
